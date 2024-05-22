@@ -1,0 +1,168 @@
+.body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 1536px;
+  text-align: center;
+  /* Setting a universal font for entire page */
+  font-family: "Montserrat", sans-serif;
+  /* Hiding the scrollbar but still allowing scrolling */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+/* Header section styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282c34;
+  height: 75px;
+  padding: 20px;
+  color: white;
+}
+
+/* Upper Section styling */
+.upper-section {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 240px;
+  width: 100%;
+  background-image: url("https://t3.ftcdn.net/jpg/03/74/54/58/240_F_374545814_VC5WD5OS8VlWDXd11y0zatph6J1fQPSm.jpg");
+  background-position: center;
+}
+
+/* Lower Section styling */
+.lower-section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 0px;
+  height: 340px;
+  background-color: rgb(105, 148, 148);
+  bottom: 0px;
+}
+
+/* Styling the images in lower section of page */
+.image-container {
+  display: flex;
+  width: 30vw;
+  height: 180px;
+  position: relative;
+  max-width: 100%;
+  line-height: 0;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.image-container img {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: white;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Properties of the image captions in lower section */
+.caption {
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  line-height: 1;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Visual properties of search field */
+.search-container input {
+  height: 25px;
+  width: 200px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-field {
+  padding: 5px;
+}
+
+/* Search button styling */
+.search-button {
+  background-color: lightseagreen;
+  margin: 0;
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid;
+  line-height: 0;
+}
+
+.button-container {
+  display: flex;
+}
+
+/* Button styling */
+.button-container button {
+  margin-left: 10px;
+  height: 25px;
+  width: 105px;
+  justify-content: center;
+  background-color: #ffffff80;
+  color: white;
+  line-height: 0;
+  border: 1px solid;
+}
+
+/* Changing button appearance on mouse hover */
+.button-container button:hover {
+  background-color: lightseagreen;
+  color: black;
+}
+
+/* Page responsiveness for smaller screens */
+/* Changing some alignments and font sizes etc to display effectively on smaller screens */
+@media only screen and (max-width: 768px) {
+  div.header-title {
+    font-size: x-small;
+  }
+  div.button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  div.button-container button {
+    margin: 5px;
+  }
+
+  /* Some more styling changes for cellphone sized screens */
+}
+@media only screen and (max-width: 600px) {
+  div.header-title {
+    font-size: x-small;
+  }
+
+  div.lower-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+  }
+  div.image-container {
+    width: 100%;
+    bottom: 10px;
+    position: relative;
+  }
+}
