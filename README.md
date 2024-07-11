@@ -1,3 +1,6 @@
+This is just a static frontend page setup to showcase html, css and javascript skills.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
